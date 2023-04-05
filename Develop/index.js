@@ -60,25 +60,44 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What license are you using',
+        message: 'What license are you using:',
         name: 'license',
-        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0', 'Apache License 2.0', 'N/A']
+        choices: ['MIT License', 'GNU General Public License v3.0', 'Apache License 2.0', 'N/A']
     },
     {
         type: 'input',
-        message: 'What badges do you have',
+        message: 'What badges do you have:',
         name: 'badges',
     },
     {
         type: 'input',
-        message: 'What features does the project offer',
+        message: 'What features does the project offer:',
         name: 'features',
+    },
+    {
+        type: 'input',
+        message: 'Next is linking images. If you did not set up your project with a Assets folder please hit enter four times!',
+    },
+    {
+        type: 'input',
+        message: 'Add image one name:',
+        name: 'imageOne',
+    },
+    {
+        type: 'input',
+        message: 'Add image two name:',
+        name: 'imageTwo',
+    },
+    {
+        type: 'input',
+        message: 'Add image three name:',
+        name: 'imageThree',
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile('readme.md', data, (err) =>
+    fs.writeFile('./Sample-README/readme.md', data, (err) =>
         err ? console.log(err) : console.log('File has been written.'));
 }
 
