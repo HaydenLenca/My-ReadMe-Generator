@@ -20,8 +20,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What installations are used:',
-        name: 'installations',
+        message: 'Installation Instructions:',
+        name: 'installation',
     },
     {
         type: 'input',
@@ -30,13 +30,23 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Who helped build this project:',
-        name: 'credits',
+        message: 'Contribution Guidelines:',
+        name: 'contribution',
+    },
+    {
+        type: 'input',
+        message: 'Test Instructions',
+        name: 'test',
     },
     {
         type: 'input',
         message: 'What is the deployed url:',
-        name: 'links',
+        name: 'deployedLink',
+    },
+    {
+        type: 'input',
+        message: 'What is the github repo url:',
+        name: 'repoLink',
     },
     {
         type: 'input',
@@ -68,7 +78,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeToFile('readme.md', data, (err) =>
+    fs.writeFile('readme.md', data, (err) =>
         err ? console.log(err) : console.log('File has been written.'));
 }
 
