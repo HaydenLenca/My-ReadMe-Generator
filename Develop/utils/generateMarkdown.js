@@ -56,7 +56,7 @@ function generateMarkdown(data) {
   ### Description
   ${data.description}
 
-  ## Table of Contents
+  ### Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Contribution](#contribution)
@@ -78,13 +78,14 @@ function generateMarkdown(data) {
  
   ### Usage 
   ${data.usage}
-  ![imageOne](./Assets/Images/${data.imageOne})
-  ![imageTwo](./Assets/Images/${data.imageTwo})
-  ![imageThree](./Assets/Images/${data.imageThree})
+  ![imageOne](../Assets/Images/${data.imageOne})
+  ![imageTwo](../Assets/Images/${data.imageTwo})
+  ![imageThree](../Assets/Images/${data.imageThree})
 
   ### Links
-  [Git Hub](${data.repolink})
-  [Deployed Site](${data.deployedlink})
+  [Git Hub](${data.repoLink})
+
+  [Deployed Site](${data.deployedLink})
 
   ### Features
   ${data.features}

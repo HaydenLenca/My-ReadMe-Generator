@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown')
 
-console.log('Welcome');
+console.log("Welcome to Hayden Lenca's ReadMe generator");
 
 // TODO: Create an array of questions for user input
 
@@ -77,6 +77,7 @@ const questions = [
     {
         type: 'input',
         message: 'Next is linking images. If you did not set up your project with a Assets folder please hit enter four times!',
+        name: 'image',
     },
     {
         type: 'input',
@@ -97,7 +98,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile('./Sample-README/readme.md', data, (err) =>
+    fs.writeFile('./Sample/readme.md', data, (err) =>
         err ? console.log(err) : console.log('File has been written.'));
 }
 

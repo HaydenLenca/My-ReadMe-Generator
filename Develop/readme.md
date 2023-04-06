@@ -31,7 +31,7 @@
   If anything from the table of contents does not apply it can be left blank or write in N/A.
   Also available is adding images in the usage area.
   To do this please set up an Assets and Images folder in your project to link the images.
-  Image link in code is ./Assets/Images/IMAGE-NAME-HERE.FILE
+  Image link in code is ../Assets/Images/IMAGE-NAME-HERE.FILE
   ![imageOne](./Assets/Images/indexImage.png)
   ![imageTwo](./Assets/Images/markImage.png)
   ![imageThree](./Assets/Images/terminalImage.png)
